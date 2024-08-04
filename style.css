@@ -1,0 +1,23 @@
+.top{
+    background-color: #1f2937;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+}
+
+.header ul,a{
+    color:white;
+    list-style-type:none;
+    text-decoration:none;
+    margin:0;
+    display:flex;
+    gap:15px;
+}
+
+
+.header{
+    display:flex;
+
+    justify-content:space-between;
+}
