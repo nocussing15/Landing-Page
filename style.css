@@ -1,10 +1,11 @@
 *{
-    font-family: hero;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     display:flex;
     flex-direction: column;
     margin:0;
+    flex: 0 1 auto;
 }
 
 .top{
@@ -12,11 +13,9 @@ body{
     color: white;
     display:flex;
     flex-direction:column;
-  
     padding-top: 20px;
-    padding-right:100px;
-    padding-left:100px;
-    margin-bottom:30px;
+    padding-right:250px;
+    padding-left:250px;
 }
 
 .header ul,a{
@@ -26,46 +25,63 @@ body{
     margin:0;
     display:flex;
     gap:15px;
+    font-size:16px;
 }
 
 
 .header{
     display:flex;
     justify-content:space-between;
-    margin-bottom:150px;
+    margin-bottom:125px;
+    font-size:24px;
+}
+
+.intro{
+    display:flex;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    margin-bottom:100px;
+    
 }
 
 .intro-title{
     font-size:48px;
     font-weight:bold;
     flex-wrap:wrap;
+    margin-bottom:0;
+    margin-top:0;
 }
 
 .intro-left{
     display:flex;
     flex-direction:column;
     width:400px;
+    
+}
+
+.intro img{
+ height:427px;
+ width:620px;
 }
 
 .sign-up{
-    font-family:Roboto,sans-serif;
     border:none;
     padding: 8px;
     border-radius: 8px;
     background: #3882f6;
-    max-width:125px;
+    width:120px;
+    height:35px;
+    color:#e5e7eb
 }
 
-.intro{
-    display:flex;
-    justify-content: space-between;
-    flex-basis:1;
-}
+
 
 .subtext{
     font-size:18px;
     color: #e5e7eb;
     flex-wrap:wrap;
+    margin:0;
+    padding-top:0;
 }
 
 
@@ -75,20 +91,33 @@ body{
     display:flex;
     flex-direction:column;
     justify-content: center;
-    text-align:center;
-   
+ 
+}
+
+#info-header{
+    text-align: center;
 }
 
 .mid ul{
     display:flex;
     list-style-type:none;
+    justify-content: center;
+    gap:50px;
+}
+
+
+.mid ul li{
+    display:flex;
+    flex-direction:column;
+    max-width:200px;
+    flex-wrap:wrap;
+    gap:15px;
 }
 .list-picture{
     border-radius:25px;
     border-style: solid;
     border-color:#3882f6;
-    font-size:18px;
-    color:#e5e7eb;
+    max-width:200px;
 }
 
 
@@ -121,17 +150,24 @@ body{
 .bottom{
     display:flex;
     background-color:#3882f6;
-    align-self:center;
-    justify-content: flex-end;
-    margin:10px;
+    border-radius:10px;
+    justify-content: center;
+    padding-left:60px;
+    padding-right:60px;
+    margin:100px;
 }
 
 .bottom-text{
     display:flex;
     flex-direction:column;
     border: #3882f6;
+    color:#e5e7eb;
 }
 
+.bottom-header{
+    font-size:24px;
+    font-weight:800;
+}
 .bottom button{
     border:white;
     border-style: solid;
