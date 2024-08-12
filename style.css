@@ -14,8 +14,15 @@ body{
     display:flex;
     flex-direction:column;
     padding-top: 20px;
-    padding-right:250px;
-    padding-left:250px;
+    padding-left:auto;
+    padding-right:auto;
+  
+}
+
+.top-wrap{
+    align-self:center;
+    width:65%;
+    max-width:65%;
 }
 
 .header ul,a{
@@ -38,9 +45,8 @@ body{
 
 .intro{
     display:flex;
-    flex: 0 1 auto;
-    justify-content: space-between;
     margin-bottom:100px;
+    gap:100px;
     
 }
 
@@ -55,13 +61,17 @@ body{
 .intro-left{
     display:flex;
     flex-direction:column;
-    width:400px;
+    width:350px;
+    flex:0.65;
     
 }
 
 .intro img{
+ display:flex;
  height:427px;
  width:620px;
+ 
+ flex:1;
 }
 
 .sign-up{
@@ -151,10 +161,15 @@ body{
     display:flex;
     background-color:#3882f6;
     border-radius:10px;
-    justify-content: center;
-    padding-left:60px;
-    padding-right:60px;
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left: 150px;
+    padding-right:150px;
     margin:100px;
+    justify-content: center;
+    gap: 30px;
+    width:fit-content;
+    align-self: center;
 }
 
 .bottom-text{
@@ -171,9 +186,15 @@ body{
 .bottom button{
     border:white;
     border-style: solid;
+    align-self:center;
 }
-
-
+.bottom-header{
+    margin-top:0;
+    margin-bottom:0;
+}
+.info{
+    margin-top:0;
+}
 .footer{
     display:flex;
     background-color: #1f2937;
@@ -181,5 +202,7 @@ body{
     font-size: 18px;
     justify-content: center;
     padding:30px;
+}
+
 
 }
